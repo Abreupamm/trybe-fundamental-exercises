@@ -5,5 +5,55 @@ ol li.par{
     color: green;
 }
 ol li.impar{
-    text-transform: unset;
+    text-transform: lowercase;
+}
+
+.header {
+    color: red;
+}
+
+h1.header em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+.listas li{
+    font-size: 20px;
+}
+
+.listas li em{
+    font-weight: 600;
+}
+
+.destaque {
+    color: blue;
+}
+
+.destaque span{
+    background-color: rgb(240, 140, 174);
+}
+
+li a:hover{
+    font-weight: 600;   
+
+}
+
+a.laranja:hover{
+    color: orange;
+}
+
+a.verde:hover{
+    color: green;
+}
+
+a.preta:hover{
+    color: black;
+}
+
+a.amarela:hover{
+    color: yellow;
+}
+
+a.verde:hover{
+    color: rgb(29, 151, 29);
 }
