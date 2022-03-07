@@ -28,3 +28,13 @@ if (valorC<valorA>valorB){
 } else{
     console.log(valorC);
 }
+
+const teste = -3;
+
+if (teste > 0){
+    console.log("POSITIVE");
+} if (teste < 0){
+    console.log("NEGATIVE");
+} else {
+    console.log("ZERO");
+}
