@@ -48,8 +48,9 @@ const resultado = "Erro";
 if (angulo1 > 0 && angulo2 > 0 && angulo3 > 0) {
     if (soma == 180) {
         console.log("True");
-    } else (soma >= 181);
+    } else {
     console.log("False");
+} 
 }
 else {
     console.log(resultado);
