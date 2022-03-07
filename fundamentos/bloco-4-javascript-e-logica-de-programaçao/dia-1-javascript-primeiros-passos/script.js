@@ -49,10 +49,35 @@ if (angulo1 > 0 && angulo2 > 0 && angulo3 > 0) {
     if (soma == 180) {
         console.log("True");
     } else (soma >= 181);
-        console.log("False");
-    }
+    console.log("False");
+}
 else {
     console.log(resultado);
 }
 
-let pecaX;
+let peça = "PEÃO"
+
+switch (peça.toLowerCase()) {
+    case "peão":
+        console.log("Os peões se movem somente para frente, uma casa por vez");
+        break;
+    case "bispo":
+        console.log("O bispo se move em uma linha reta diagonalmente no tabuleiro");
+        break;
+    case "torre":
+        console.log("A torre se move em linha reta horizontalmente e verticalmente pelo número de casas não ocupadas");
+        break;
+    case "cavalo":
+        console.log("O cavalo move-se por duas casas horizontalmente ou verticalmente e então uma casa a mais em uma ângulo reto");
+        break;
+    case "rainha":
+        console.log("Ela pode mover-se qualquer número de casas em linha reta - verticalmente, horizontalmente ou diagonalmente.");
+        break;
+    case "rei":
+        console.log("O rei pode se mover para qualquer casa adjacente");
+        break;
+    default:
+        console.log("Essa peça não existe no jogo de xadrez");
+
+}
+
