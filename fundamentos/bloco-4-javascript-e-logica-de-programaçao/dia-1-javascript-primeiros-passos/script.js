@@ -38,3 +38,16 @@ if (teste > 0){
 } else {
     console.log("ZERO");
 }
+
+const angulo1 = 50;
+const angulo2 = 100;
+const angulo3 = -5;
+const soma = angulo1 + angulo2 + angulo3;
+const resultado = "Erro";
+if (soma == 180){
+    console.log("True");
+} if (soma >= 181){
+    console.log("False");
+} else {
+    console.log(resultado);
+}
