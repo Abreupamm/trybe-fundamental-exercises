@@ -45,7 +45,7 @@ const angulo3 = -90;
 const soma = angulo1 + angulo2 + angulo3;
 const resultado = "Erro";
 
-if (angulo1 >= 0 && angulo2 >= 0 && angulo3 >= 0) {
+if (angulo1 > 0 && angulo2 > 0 && angulo3 > 0) {
     if (soma == 180) {
         console.log("True");
     } else (soma >= 181);
@@ -54,3 +54,5 @@ if (angulo1 >= 0 && angulo2 >= 0 && angulo3 >= 0) {
 else {
     console.log(resultado);
 }
+
+let pecaX;
