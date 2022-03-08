@@ -12,3 +12,8 @@ for (let s = 0; s < numbers.length; s += 1) {
     soma += numbers[s];
 }
 console.log(soma);
+
+//exercício 3
+let somaA = soma / numbers.length
+
+console.log(somaA);
