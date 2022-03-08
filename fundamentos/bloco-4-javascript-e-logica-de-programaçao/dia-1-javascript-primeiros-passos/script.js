@@ -118,3 +118,15 @@ if (A % 2 || B % 2 || C % 2) {
     console.log("False")
 }
  
+// exercicio 9
+
+const A1 = 10;
+const B1 = 20;
+const C1 = 32;
+
+
+if (A1 % 2 || B1 % 2 || C1 % 2) {
+    console.log("False");
+} else {
+    console.log("True")
+}
