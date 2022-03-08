@@ -54,8 +54,8 @@ if (angulo1 > 0 && angulo2 > 0 && angulo3 > 0) {
     if (soma == 180) {
         console.log("True");
     } else {
-    console.log("False");
-} 
+        console.log("False");
+    }
 }
 else {
     console.log(resultado);
@@ -117,7 +117,7 @@ if (A % 2 || B % 2 || C % 2) {
 } else {
     console.log("False")
 }
- 
+
 // exercicio 9
 
 const A1 = 10;
@@ -140,8 +140,32 @@ let custoTotal = custo + imposto;
 let lucro = valorDeVenda - custoTotal;
 let qunatidadeVendida = 1000;
 
-if(custo >= 0 && valorDeVenda >= 0) {
-console.log(lucro * qunatidadeVendida);
+if (custo >= 0 && valorDeVenda >= 0) {
+    console.log(lucro * qunatidadeVendida);
 } else {
     console.log("Erro");
 }
+
+// exercicio 11
+let bruto = 1500
+let valorADeuzir;
+let aliquotaInss;
+let aliquotaIr;
+let inss = bruto * aliquotaInss;
+let baseIr = bruto - inss;
+let ir = baseIr * aliquotaIr - valorADeuzir;
+let liquido = bruto - inss -ir;
+
+if(bruto <= 1556.94) {
+    
+    aliquotaInss = 0.08;
+
+    switch(aliquotaInss){
+        case 0.08:
+            aliquotaIr = null;
+            valorADeuzir = null;
+            console.log(liquido);
+            break;
+    }
+         
+    } else {}
