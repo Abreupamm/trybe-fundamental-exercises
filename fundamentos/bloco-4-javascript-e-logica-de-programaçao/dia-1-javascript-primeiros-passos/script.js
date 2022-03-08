@@ -130,3 +130,18 @@ if (A1 % 2 || B1 % 2 || C1 % 2) {
 } else {
     console.log("True")
 }
+
+// exercicio 10
+
+const custo = 50;
+const valorDeVenda = 120;
+let imposto = custo * 0.2;
+let custoTotal = custo + imposto;
+let lucro = valorDeVenda - custoTotal;
+let qunatidadeVendida = 1000;
+
+if(custo >= 0 && valorDeVenda >= 0) {
+console.log(lucro * qunatidadeVendida);
+} else {
+    console.log("Erro");
+}
