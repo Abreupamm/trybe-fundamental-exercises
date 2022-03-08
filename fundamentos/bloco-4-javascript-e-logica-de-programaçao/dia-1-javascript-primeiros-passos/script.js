@@ -1,3 +1,5 @@
+//exercicio 1
+
 const a = 10;
 const b = 5;
 
@@ -7,7 +9,7 @@ console.log(a * b);
 console.log(a / b);
 console.log(a % b);
 
-
+// exercicio 2
 const valor1 = 30;
 const valor2 = 6;
 
@@ -17,6 +19,7 @@ if (valor1 > valor2) {
     console.log(valor2)
 }
 
+// exercicio 3
 const valorA = 100;
 const valorB = 400;
 const valorC = 500;
@@ -29,6 +32,7 @@ if (valorC < valorA > valorB) {
     console.log(valorC);
 }
 
+// exercicio 4
 const teste = -3;
 
 if (teste > 0) {
@@ -39,6 +43,7 @@ if (teste > 0) {
     console.log("ZERO");
 }
 
+// exercicio 5
 const angulo1 = 360;
 const angulo2 = -90;
 const angulo3 = -90;
@@ -56,6 +61,7 @@ else {
     console.log(resultado);
 }
 
+// exercicio 6
 let peça = "PEÃO"
 
 switch (peça.toLowerCase()) {
@@ -82,6 +88,7 @@ switch (peça.toLowerCase()) {
 
 }
 
+// exercicio 7
 let nota = 98;
 if (nota > 100 || nota < 0) {
     console.log("Erro")
@@ -100,3 +107,14 @@ if (nota > 100 || nota < 0) {
         console.log("F")
     }
 }
+// exercicio 8
+const A = 10;
+const B = 20;
+const C = 32;
+
+if (A % 2 || B % 2 || C % 2) {
+    console.log("True");
+} else {
+    console.log("False")
+}
+ 
