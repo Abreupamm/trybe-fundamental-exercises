@@ -48,3 +48,13 @@ for (let r = 0; r < numbers.length; r += 1) {
  } else {
      console.log(impar);
  }
+
+ // exercício 7
+let valorMin = Math.min(...numbers);
+
+for (let m = 0; m < numbers.length; m += 1) {
+    if (numbers[m] === valorMin) {
+        console.log(numbers[m])
+    }
+
+}
