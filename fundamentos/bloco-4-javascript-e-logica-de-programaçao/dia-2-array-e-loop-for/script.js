@@ -66,3 +66,11 @@ for(let n = 1; n < 26; n +=1) {
 }
 
 console.log(numeros);
+
+// exercício 9
+let numerosDivididos = [];
+for(let d = 0; d < numeros.length; d += 1){
+let divisao = numeros[d] / 2;
+numerosDivididos.push(divisao);
+}
+console.log(numerosDivididos);
