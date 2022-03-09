@@ -58,3 +58,11 @@ for (let m = 0; m < numbers.length; m += 1) {
     }
 
 }
+
+// exercício 8
+let numeros = [];
+for(let n = 1; n < 26; n +=1) {
+    numeros.push([n]);
+}
+
+console.log(numeros);
