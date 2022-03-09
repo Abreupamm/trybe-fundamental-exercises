@@ -35,3 +35,16 @@ for (let v = 0; v < numbers.length; v += 1) {
     }
 
 }
+
+// exercício 6
+let impar = [];
+for (let r = 0; r < numbers.length; r += 1) {
+    if(numbers[r] %2 != 0){
+        impar.push(numbers[r]);
+    }
+}
+ if(impar == null){
+     console.log("Nenhum valor ímpar encontrado");
+ } else {
+     console.log(impar);
+ }
