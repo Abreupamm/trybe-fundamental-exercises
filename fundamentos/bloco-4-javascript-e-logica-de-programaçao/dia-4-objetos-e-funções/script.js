@@ -18,3 +18,8 @@ boasVindas()
 
 info['recorrente'] = 'sim';
 console.log(info);
+
+// 3 - Faça um for/in que mostre todas as chaves do objeto.
+for(dadosPerson in info){
+    console.log(dadosPerson);
+}
