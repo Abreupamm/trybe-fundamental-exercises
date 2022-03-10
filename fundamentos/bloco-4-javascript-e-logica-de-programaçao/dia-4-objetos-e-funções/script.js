@@ -23,3 +23,9 @@ console.log(info);
 for(dadosPerson in info){
     console.log(dadosPerson);
 }
+
+// 4 - Faça um novo for/in , 
+// mas agora mostre todos os valores das chaves do objeto. 
+for(valor in info){
+    console.log(info[valor]);
+}
