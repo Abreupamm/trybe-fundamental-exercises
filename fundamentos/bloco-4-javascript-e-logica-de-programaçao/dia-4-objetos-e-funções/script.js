@@ -42,10 +42,29 @@ let info2 = {
     recorrente: 'Sim'
 };
 
-    for (valores in info) {
-    }
-    for(valores1 in info2){
-    }
-    console.log(info[valores]  + ' e ' + info2[valores1]);
-   
+/* como os 2 objetos possuem o mesmo número de chaves e os nomes das chaves são iguais,
+ vc pode usar as chaves de 1 pra acessar os dados nos dois */
 
+    for (valores in info) {
+        console.log(info[valores] + ' e '+ info2[valores]);
+    }
+    
+   
+    // 6 - Acesse as chaves nome , sobrenome e titulo , que 
+    // está dentro da chave livrosFavoritos , e faça um  
+    // console.log no seguinte formato: "O livro favorito de Julia 
+    // Pessoa se chama 'O Pior Dia de Todos'".
+    // lastIndex     
+    
+    let leitor = {
+        nome: 'Julia',
+        sobrenome: 'Pessoa',
+        idade: 21,
+        livrosFavoritos: {
+            titulo: 'O Pior Dia de Todos',
+            autor: 'Daniela Kopsch',
+            editora: 'Tordesilhas',
+          },
+      };
+
+    console.log('O livro favorito de ' + leitor.nome + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos.titulo);
