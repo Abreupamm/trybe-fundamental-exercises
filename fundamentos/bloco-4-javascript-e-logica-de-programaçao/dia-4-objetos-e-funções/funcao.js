@@ -5,15 +5,15 @@
 // verificaPalindrome('desenvolvimento') ;
 // Retorno esperado: false
 
-function verificaPalindrome(palavra){
+function verificaPalindrome(palavra) {
     let inverso = '';
     let palindrome = palavra;
-    for(let index = palindrome.length -1; index >= 0; index -= 1){
-    inverso = inverso + palindrome[index];
+    for (let index = palindrome.length - 1; index >= 0; index -= 1) {
+        inverso = inverso + palindrome[index];
     }
-    if(palindrome === inverso){
+    if (palindrome === inverso) {
         console.log(true);
-    }else {
+    } else {
         console.log(false);
     }
 }
@@ -23,10 +23,10 @@ verificaPalindrome('arara');
 // Array de teste: [2, 3, 6, 7, 10, 1]; .
 // Valor esperado no retorno da função: 4 .
 
-function maiorIndice(array){
-   let maior = Math.max(...array);
-   let indice = array.indexOf(maior,0);
-   console.log(indice);
+function maiorIndice(array) {
+    let maior = Math.max(...array);
+    let indice = array.indexOf(maior, 0);
+    console.log(indice);
 }
 
 maiorIndice([2, 3, 6, 7, 10, 1]);
@@ -35,9 +35,9 @@ maiorIndice([2, 3, 6, 7, 10, 1]);
 // Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
 // Valor esperado no retorno da função: 6 .
 
-function menorIndice(array1){
+function menorIndice(array1) {
     let menor = Math.min(...array1);
-    let indice = array1.indexOf(menor,0);
+    let indice = array1.indexOf(menor, 0);
     console.log(indice);
 }
 menorIndice([2, 4, 6, 7, 10, 0, -3]);
@@ -47,6 +47,23 @@ menorIndice([2, 4, 6, 7, 10, 0, -3]);
 // Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
 // Valor esperado no retorno da função: Fernanda .
 
+function maiorNome(nomes) {
+
+    let todosTamanhos = [];
+
+    for (i = 0; i < nomes.length; i += 1) {
+        let convert = nomes[i];
+        let tamanho = convert.length;
+        todosTamanhos.push(tamanho);
+    }
+
+    let maiorTodosTamanhos = Math.max(...todosTamanhos);
+    let indicemaior = todosTamanhos.indexOf(maiorTodosTamanhos, 0);
+    let indicenome = indicemaior;
+    console.log(nomes[indicenome]);
+
+}
+maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])
 
 
 // 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
