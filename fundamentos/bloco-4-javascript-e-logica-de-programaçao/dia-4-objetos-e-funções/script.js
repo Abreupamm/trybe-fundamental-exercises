@@ -60,11 +60,13 @@ let info2 = {
         nome: 'Julia',
         sobrenome: 'Pessoa',
         idade: 21,
-        livrosFavoritos: {
+        livrosFavoritos: [
+            {
             titulo: 'O Pior Dia de Todos',
             autor: 'Daniela Kopsch',
             editora: 'Tordesilhas',
           },
+        ],
       };
 
-    console.log('O livro favorito de ' + leitor.nome + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos.titulo);
+    console.log('O livro favorito de ' + leitor.nome + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos[0].titulo);
