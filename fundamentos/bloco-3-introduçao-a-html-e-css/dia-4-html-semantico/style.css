@@ -1,8 +1,39 @@
+body{
+margin: 0% 0%;
+font-family: lora;
+}
 
 .titulo{
     text-align: center;
     background-color: aquamarine;
-    height: 100px;
-  
+    width:auto;
+    height: 100px;  
+}
+h1{
+    margin: 0%;
+    padding-top: 25px;   
 }
 
+.navegaçao{
+    background-color: rgb(81, 104, 96);
+    height: 25px;
+    text-align: center;
+}
+
+.barra-nav{
+    padding: 10px;
+    margin: 30px;
+    width: 30px;
+    color: white;
+}
+
+img{
+    height: 300px;
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.oneimage{
+    float: left;
+}
