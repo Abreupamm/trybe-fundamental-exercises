@@ -5,6 +5,10 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 for (let i = 0; i < numbers.length; i += 1) {
     console.log(numbers[i]);
 }
+// dia 4.3 sobre exercício 1
+// 1- criar um array
+// 2- criar um loop para percorrer o array
+// 3- imprimir na tela usando o console.log todos os valores que estiverem no array
 
 // exercício 2
 let soma = 0;
@@ -12,6 +16,13 @@ for (let s = 0; s < numbers.length; s += 1) {
     soma += numbers[s];
 }
 console.log(soma);
+
+// dia 4.3 sobre exercício 2
+// 1- criar uma variável que vai quardar os valores já somados
+// 2- criar um loop que vai percorer todo o array do exercício anterior
+// 3- Somar o cada valor à variável ciada no tópico 1
+// 4- imprimir na tela usando o console.log o resultado da soma
+ 
 
 //exercício 3
 let somaA = soma / numbers.length
