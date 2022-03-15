@@ -51,17 +51,21 @@
   pensando no texto e sim realizando o exercício)*/
   document.getElementById('futuro').innerHTML = 'Daqui a 2 anos me trabalhando na área de tecnologia e crescendo na carreira de desenvolvedora web';
 //  **Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+let color = document.getElementsByClassName('main-content')[0];
+color.style.backgroundColor = 'rgb(76,164,109)'
 
 //  **Crie uma função que mude a cor do quadrado vermelho para branco.
+let color1 = document.getElementsByClassName('center-content')[0];
+color1.style.backgroundColor = 'white'
+
 //  Crie uma função que corrija o texto da tag <h1>.
 document.getElementsByClassName('title')[0].innerHTML = 'Exercício 5.1 - JavaEscripit'
 
   //  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- 
-}
-
-    
-  
+   let text = 'Texto padrão do nosso site';
+   let maiusculo = text.toUpperCase()
+  document.getElementsByTagName('p')[0].innerHTML = maiusculo
+      
 //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
   let section = document.querySelectorAll('.center-content p')
   console.log(section);
