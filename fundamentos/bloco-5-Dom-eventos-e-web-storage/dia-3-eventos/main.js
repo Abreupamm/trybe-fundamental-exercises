@@ -36,6 +36,13 @@ function addClass(evento) {
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
+function alteraTec(){
+  let classeTech = document.querySelector('.tech');
+  classeTech.innerText = input.value
+}
+
+input.addEventListener('keyup', alteraTec);
+
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
