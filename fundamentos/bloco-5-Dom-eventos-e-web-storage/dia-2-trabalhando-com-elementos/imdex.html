@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+// Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+let body = document.querySelector('body');
+let title = document.createElement('h1');
+title.innerText = ' Exercício 5.2 - JavaScript DOM';
+body.appendChild(title);
+// Adicione a tag main com a classe main-content como filho da tag body ;
+let main = document.createElement('main');
+body.appendChild(main);
+main.classList.add('main-content');
+
+// Adicione a tag section com a classe center-content como filho da tag main 
+// criada no passo 2;
+let tagPai = document.querySelector('main');
+let criarSection = document.createElement('section');
+tagPai.appendChild(criarSection);
+criarSection.classList.add('center-content');
+
+// Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+let paiSection = document.querySelector('.center-content');
+let text = document.createElement('p');
+paiSection.appendChild(text);
+text.innerText = 'Hoje, você vai aprender sobre o famoso DOM , a estrutura que faz a ponte entre o HTML e o JavaScript e que permite interação entre os dois. Por fim, você vai aprender um pouco sobre algumas das interações possíveis: veremos como recuperar dados do HTML através do JavaScript .'
+
+// Adicione a tag section com a classe left-content como filho da tag main criada no 
+// passo 2;
+let mainClass = document.querySelector('.main-content')
+let section2 = document.createElement('section');
+mainClass.appendChild(section2);
+section2.classList.add('left-content');
+
+// Adicione a tag section com a classe right-content como filho da tag main criada
+//  no passo 2;
+let mainClass1 = document.querySelector('.main-content')
+let section3 = document.createElement('section');
+mainClass1.appendChild(section3);
+section3.classList.add('right-content');
+
+// Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e 
+// classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+let imagem = document.createElement('img');
+section2.appendChild(imagem);
+imagem.src = 'https://picsum.photos/200';
+imagem.classList.add('small-image');
+
+
+// Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , 
+// dois , três , ... como valores da lista. Essa lista deve ser filha do section criado
+//  no passo 6;
+let numeros = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+let lista = document.createElement('ul');
+section3.appendChild(lista);
+let ul = document.querySelector('ul');
+for(let i = 0; i < numeros.length; i += 1) {
+  let list = document.createElement('li');
+  let n = numeros[i];
+  list.innerText = n;
+ul.appendChild(list);
+}
+
+
+// Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+
+function criaTitle(tag) {
+  for(let i = 0; i < tag.length; i += 1) {
+    let tagTitle = tag[i];
+let titulo = document.createElement(tagTitle);
+mainClass1.appendChild(titulo);
+  }
+}
+criaTitle(['h3', 'h3', 'h3'])
+
+
+
+      // COLOQUE SEU CÓDIGO AQUI
+    </script>
+  </body>
+</html>
