@@ -91,7 +91,7 @@ section2.classList.add('left-content');
 //  no passo 2;
 let mainClass1 = document.querySelector('.main-content')
 let section3 = document.createElement('section');
-mainClass1.appendChild(section2);
+mainClass1.appendChild(section3);
 section3.classList.add('right-content');
 
 // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e 
@@ -102,8 +102,33 @@ imagem.src = 'https://picsum.photos/200';
 imagem.classList.add('small-image');
 
 
-// Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+// Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , 
+// dois , três , ... como valores da lista. Essa lista deve ser filha do section criado
+//  no passo 6;
+let numeros = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+let lista = document.createElement('ul');
+section3.appendChild(lista);
+let ul = document.querySelector('ul');
+for(let i = 0; i < numeros.length; i += 1) {
+  let list = document.createElement('li');
+  let n = numeros[i];
+  list.innerText = n;
+ul.appendChild(list);
+}
+
+
 // Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+
+function criaTitle(tag) {
+  for(let i = 0; i < tag.length; i += 1) {
+    let tagTitle = tag[i];
+let titulo = document.createElement(tagTitle);
+mainClass1.appendChild(titulo);
+  }
+}
+criaTitle(['h3', 'h3', 'h3'])
+
+
 
       // COLOQUE SEU CÓDIGO AQUI
     </script>
