@@ -32,21 +32,35 @@ createDaysOfTheWeek();
 // classe holiday . Ex: <li class="day holiday">24</li>
 // Os dias 4, 11, 18 e 25 são Sexta-feira. Eles devem conter a classe day e a classe
 //  friday . Ex: <li class="day friday">4</li>
+function criaDiaMes () {
+  const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+  let ulDays = document.getElementById('days');
 
-const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
-
-let ulDays = document.querySelector('#days');
-for (let i = 0; i > dezDaysList.length; i += 1) {
+  for (let i = 0; i < dezDaysList.length; i += 1) {
+    let numero = dezDaysList[i];
     let criaDia = document.createElement('li');
-    criaDia.innerText = dezDaysList[i];
-    criaDia.classList.add('day')
-    if (dezDaysList[i] >= 24 && dezDaysList[i] <= 31 && i > 1) {
+    if (dezDaysList[i] === 24 || dezDaysList[i] === 25 || dezDaysList[i] === 31) {
       criaDia.classList.add('holiday');
     }
-    if (dezDaysList[i] >= 4 && dezDaysList <= 25) {
+    if (dezDaysList[i] === 4 || dezDaysList[i] === 11 || dezDaysList[i] === 18 || dezDaysList[i] === 25) {
       criaDia.classList.add('friday');
     }
-    ulDays.appendChild(criaDia);
+  criaDia.classList.add('day')
+  criaDia.innerHTML = numero;
+    ulDays.appendChild(criaDia)
   }
-  let resultado = ulDays.Child()
-console.log(resultado);
+}
+criaDiaMes();
+
+// Exercício 2:
+// Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
+// Adicione a este botão a ID "btn-holiday" .
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+let feriados ='';
+function feriadosMes(s){
+  let div = document.querySelector('.buttons-container');
+let butttom = document.createElement('button');
+butttom.id = 'btn-holiday';
+div.appendChild(butttom);
+}
+feriadosMes(feriados);
