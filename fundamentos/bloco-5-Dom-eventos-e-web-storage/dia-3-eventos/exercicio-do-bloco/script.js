@@ -32,7 +32,7 @@ createDaysOfTheWeek();
 // classe holiday . Ex: <li class="day holiday">24</li>
 // Os dias 4, 11, 18 e 25 são Sexta-feira. Eles devem conter a classe day e a classe
 //  friday . Ex: <li class="day friday">4</li>
-function criaDiaMes () {
+function criaDiaMes() {
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   let ulDays = document.getElementById('days');
 
@@ -45,8 +45,8 @@ function criaDiaMes () {
     if (dezDaysList[i] === 4 || dezDaysList[i] === 11 || dezDaysList[i] === 18 || dezDaysList[i] === 25) {
       criaDia.classList.add('friday');
     }
-  criaDia.classList.add('day')
-  criaDia.innerHTML = numero;
+    criaDia.classList.add('day')
+    criaDia.innerHTML = numero;
     ulDays.appendChild(criaDia)
   }
 }
@@ -56,13 +56,13 @@ criaDiaMes();
 // Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
 // Adicione a este botão a ID "btn-holiday" .
 // Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
-let feriados ='FERIADOS';
-function feriadosMes(s){
+let feriados = 'FERIADOS';
+function feriadosMes(s) {
   let div = document.querySelector('.buttons-container');
-let butttom = document.createElement('button');
-butttom.innerText = s
-butttom.id = 'btn-holiday';
-div.appendChild(butttom);
+  let butttom = document.createElement('button');
+  butttom.innerText = s
+  butttom.id = 'btn-holiday';
+  div.appendChild(butttom);
 }
 feriadosMes(feriados);
 
@@ -71,3 +71,23 @@ feriadosMes(feriados);
 // possuem a classe "holiday" .
 // É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração 
 // inicial com a cor "rgb(238,238,238)" .
+let botao = document.querySelector('#btn-holiday');
+function selectFeriados() {
+  let diasCor = document.querySelectorAll('.holiday');
+  for (let i = 0; i < diasCor.length; i += 1) {
+    let item = document.getElementsByClassName('holiday')[i];
+    item.style.backgroundColor = 'white';
+  }
+
+  function selectFeriados() {
+    let diasCor = document.querySelectorAll('.holiday');
+    for (let i = 0; i < diasCor.length; i += 1) {
+      let item = document.getElementsByClassName('holiday')[i];
+      item.style.backgroundColor = 'rgb(238,238,238)';
+    }
+  
+  }
+  botao.addEventListener('click', selectFeriados);
+
+}
+botao.addEventListener('click', selectFeriados);
