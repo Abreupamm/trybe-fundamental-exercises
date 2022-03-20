@@ -158,6 +158,13 @@ remove();
 // da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
 
+function addTarefa(nome){
+let tag = document.createElement('span');
+tag.innerHTML = nome;
+let dvp = document.getElementsByClassName('my-tasks')[0];
+dvp.appendChild(tag);
+}
+addTarefa('Nome da tarefa');
 
 // Exercício 8:
 // Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como
