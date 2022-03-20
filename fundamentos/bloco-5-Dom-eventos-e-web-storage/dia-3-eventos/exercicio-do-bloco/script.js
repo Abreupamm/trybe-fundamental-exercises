@@ -171,8 +171,14 @@ addTarefa('Tarefa');
 //  parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
 // O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
-
-
+function tarefaCor(cor){
+let tagDiv = document.createElement('div');
+tagDiv.classList.add('task');
+tagDiv.style.backgroundColor = cor;
+let pdv = document.getElementsByClassName('my-tasks')[0];
+pdv.appendChild(tagDiv);
+}
+tarefaCor('purple')
 // Exercício 9:
 // Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este
 //  elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
