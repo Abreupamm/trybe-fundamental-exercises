@@ -78,7 +78,6 @@ function selectFeriados() {
     let item = document.getElementsByClassName('holiday')[i];
     item.style.backgroundColor = 'white';
   }
-
   function selectFeriados1() {
     let diasCor = document.querySelectorAll('.holiday');
     for (let i = 0; i < diasCor.length; i += 1) {
@@ -127,7 +126,7 @@ function selectSextou() {
       let item = document.getElementsByClassName('friday')[i];
       item.innerText = numer[i];
     }
-  
+
   }
   botao1.addEventListener('click', selectSextou1);
 
@@ -140,6 +139,20 @@ botao1.addEventListener('click', selectSextou);
 // Dica - Propriedade: event.target .
 
 
+function destaque(){
+  let todosDias = document.querySelector('#days');
+  todosDias.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+  });
+}
+function remove(){
+  let todosDias = document.querySelector('#days');
+  todosDias.addEventListener('mouseout', function(event) {
+  event.target.style.fontSize = '20px';
+  });
+}
+destaque();
+remove();
 // Exercício 7:
 // Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome 
 // da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
