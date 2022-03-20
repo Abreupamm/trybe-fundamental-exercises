@@ -139,16 +139,16 @@ botao1.addEventListener('click', selectSextou);
 // Dica - Propriedade: event.target .
 
 
-function destaque(){
+function destaque() {
   let todosDias = document.querySelector('#days');
-  todosDias.addEventListener('mouseover', function(event) {
+  todosDias.addEventListener('mouseover', function (event) {
     event.target.style.fontSize = '30px';
   });
 }
-function remove(){
+function remove() {
   let todosDias = document.querySelector('#days');
-  todosDias.addEventListener('mouseout', function(event) {
-  event.target.style.fontSize = '20px';
+  todosDias.addEventListener('mouseout', function (event) {
+    event.target.style.fontSize = '20px';
   });
 }
 destaque();
@@ -158,11 +158,11 @@ remove();
 // da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
 
-function addTarefa(nome){
-let tag = document.createElement('span');
-tag.innerHTML = nome;
-let dvp = document.getElementsByClassName('my-tasks')[0];
-dvp.appendChild(tag);
+function addTarefa(nome) {
+  let tag = document.createElement('span');
+  tag.innerHTML = nome;
+  let dvp = document.getElementsByClassName('my-tasks')[0];
+  dvp.appendChild(tag);
 }
 addTarefa('Tarefa');
 
@@ -171,20 +171,23 @@ addTarefa('Tarefa');
 //  parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
 // O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
-function tarefaCor(cor){
-let tagDiv = document.createElement('div');
-tagDiv.classList.add('task');
-tagDiv.style.backgroundColor = cor;
-let pdv = document.getElementsByClassName('my-tasks')[0];
-pdv.appendChild(tagDiv);
+function tarefaCor(cor) {
+  let tagDiv = document.createElement('div');
+  tagDiv.classList.add('task');
+  tagDiv.style.backgroundColor = cor;
+  let pdv = document.getElementsByClassName('my-tasks')[0];
+  pdv.appendChild(tagDiv);
 }
 tarefaCor('purple')
+
 // Exercício 9:
 // Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este
 //  elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
 // Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa 
 // selecionada.
-
+function addTarefa(){
+  
+}
 
 // Exercício 10:
 // Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua
