@@ -164,7 +164,7 @@ tag.innerHTML = nome;
 let dvp = document.getElementsByClassName('my-tasks')[0];
 dvp.appendChild(tag);
 }
-addTarefa('Nome da tarefa');
+addTarefa('Tarefa');
 
 // Exercício 8:
 // Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como
