@@ -7,43 +7,53 @@
     <title>formulário da TrybeTrip</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>concurso TrybeTrip</h1>
+      <span
+        >Concora a uma viagem totalmente paga e com várias opções de
+        destino.</span
+      >
+    </header>
     <form action="trybetrip.html">
       <div id="name-email">
         <label for="name-user">Nome</label>
-        <input id="name-user" name="nome" type="text" />
+        <input id="name-user" name="nome" min="10" max="40" type="text" />
         <label for="email-user">E-mail</label>
-        <input id="email-user" name="e-mail" type="email" />
+        <input id="email-user" name="e-mail" min="10" max="50" type="email" />
       </div>
       <div id="check">
-        <input type="radio" name="opicao1" id="op1" />
-        <label for="op1">Opção 1</label>
-        <input type="radio" name="opicao2" id="op2" />
-        <label for="op2">Opção 2</label>
-        <input type="radio" name="opicao3" id="op3" />
-        <label for="op3">Opção 3</label>
-        <input type="radio" name="opicao4" id="op4" />
-        <label for="op4">Opção 4</label>
+        <input type="radio" name="cidade" id="op1" />
+        <label for="op1">Cidade</label>
+        <input type="radio" name="campo" id="op2" />
+        <label for="op2">Campo</label>
+        <input type="radio" name="praia" id="op3" />
+        <label for="op3">Praia</label>
+        <input type="radio" name="montanhas" id="op4" />
+        <label for="op4">Montanhas</label>
       </div>
       <div id="respota">
-        <label for="texto-resposta">Espaço para digitar a resposta:</label>
+        <label for="texto-resposta"
+          >Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+          TrybeTrip?</label
+        >
         <textarea
-          name="texto-resposta"
+          name="por que ganhar"
           id="texto-resposta"
           cols="30"
           rows="10"
+          maxlength="500"
         ></textarea>
       </div>
       <div id="data-acordo">
-        <label for="data">Data:</label>
+        <label for="data">Qual a melhor data para realizar sua viagem?</label>
         <input type="date" name="data" id="data" />
         <label for="concordo1"
-          >Concordo1
-          <input type="checkbox" name="concordo1" id="concordo1" />
+          >Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+          <input type="checkbox" name="receber-oportunidades" id="concordo1" />
         </label>
         <label for="concordo2"
-          >Concordo2
-          <input type="checkbox" name="concordo2" id="concordo2" />
+          >Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+          <input type="checkbox" name="permissão-de-imagens" id="concordo2" />
         </label>
       </div>
     </form>
