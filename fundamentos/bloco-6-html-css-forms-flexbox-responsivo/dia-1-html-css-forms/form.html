@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulário da TrybeTrip</title>
+  </head>
+  <body>
+    <header></header>
+    <form action="trybetrip.html">
+      <div id="name-email">
+        <label for="name-user">Nome</label>
+        <input id="name-user" name="nome" type="text" />
+        <label for="email-user">E-mail</label>
+        <input id="email-user" name="e-mail" type="email" />
+      </div>
+      <div id="check">
+        <input type="radio" name="opicao1" id="op1" />
+        <label for="op1">Opção 1</label>
+        <input type="radio" name="opicao2" id="op2" />
+        <label for="op2">Opção 2</label>
+        <input type="radio" name="opicao3" id="op3" />
+        <label for="op3">Opção 3</label>
+        <input type="radio" name="opicao4" id="op4" />
+        <label for="op4">Opção 4</label>
+      </div>
+      <div id="respota">
+        <label for="texto-resposta">Espaço para digitar a resposta:</label>
+        <textarea
+          name="texto-resposta"
+          id="texto-resposta"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div id="data-acordo">
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data" />
+        <label for="concordo1"
+          >Concordo1
+          <input type="checkbox" name="concordo1" id="concordo1" />
+        </label>
+        <label for="concordo2"
+          >Concordo2
+          <input type="checkbox" name="concordo2" id="concordo2" />
+        </label>
+      </div>
+    </form>
+  </body>
+</html>
