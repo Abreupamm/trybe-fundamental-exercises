@@ -1,0 +1,65 @@
+* {
+  margin: 0%;
+}
+body {
+  background-image: url(https://comaxcontabilidade.com.br/wp-content/uploads/2020/12/comax-56-800x400.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header {
+  width: 50%;
+  background-color: rgb(0, 105, 18);
+  margin: 40px 90px;
+  color: aliceblue;
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 30px;
+}
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+}
+span,
+label {
+  font-size: 25px;
+}
+#todo-form {
+  width: 50%;
+  margin: 10px 85px;
+  padding: 0px 40px;
+  border-radius: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+}
+
+#name-email input {
+  width: 80%;
+  height: 25px;
+  border-radius: 10px;
+}
+
+#texto-resposta {
+  width: 90%;
+  border-radius: 30px;
+}
+
+#acordos {
+  display: block;
+  width: 100%;
+}
+
+#enviar,
+#apagar {
+  padding: 10px 20px;
+  font-size: 30px;
+  color: aliceblue;
+  border-radius: 30px;
+  margin: 20px 150px;
+}
+#enviar {
+  background-color: rgb(0, 105, 18);
+}
+#apagar {
+  background-color: brown;
+}
