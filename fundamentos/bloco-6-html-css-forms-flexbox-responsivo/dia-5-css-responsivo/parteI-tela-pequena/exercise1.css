@@ -89,6 +89,53 @@ flex-direction: row;
     }
     
     figcaption {
-      
+      font-size: 15px;
     }
 }
+
+@media (min-width: 1300px) {
+  body {
+    background-color: blueviolet ;
+    margin: 60px;
+  }
+  article {
+    font-size: 35px;
+    }
+    
+    h1 {
+    font-size: 58px
+    }
+    
+    h2 {
+   font-size: 40px;
+    }
+    
+    img {
+
+    }
+    
+    main {
+    
+    }
+    
+    section {
+    display: flex;
+flex-direction: row;
+    flex-wrap: wrap;
+    /* border: brown solid 1px; */
+    width: 80%;
+    margin: 0 60px 0 60px;   
+    }
+    
+    figure {
+       margin-left: 20px;
+       padding: 0;
+       width: 40%;
+
+    }
+    
+    figcaption {
+      font-size: 15px;
+    }
+}
+
