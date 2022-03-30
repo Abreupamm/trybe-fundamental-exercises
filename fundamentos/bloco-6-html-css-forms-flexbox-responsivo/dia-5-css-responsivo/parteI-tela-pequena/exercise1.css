@@ -15,15 +15,15 @@ margin: 20px;
 }
 
 article {
-font-size: 25px;
+font-size: 30px;
 }
 
 h1 {
-font-size: 28px;
+font-size: 38px;
 }
 
 h2 {
-
+font-size: 35px;
 }
 
 img {
@@ -45,4 +45,50 @@ figure {
 
 figcaption {
   font-size: .8em;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: aquamarine;
+    margin: 50px;
+  }
+  article {
+    
+    }
+    
+    h1 {
+    
+    }
+    
+    h2 {
+   
+    }
+    
+    img {
+
+    }
+    
+    main {
+    
+    }
+    
+    section {
+    display: flex;
+flex-direction: row;
+    flex-wrap: wrap;
+    /* border: brown solid 1px; */
+    width: 80%;
+    margin: 0 60px 0 60px;   
+    }
+    
+    figure {
+       margin-left: 20px;
+       padding: 0;
+       width: 40%;
+
+    }
+    
+    figcaption {
+      
+    }
 }
