@@ -12,3 +12,13 @@ const showEmailList = (email) => {
 
 // Adicione seu código aqui
 emailListInData.forEach(showEmailList);
+
+// find
+// 1 - Utilize o find para retornar o primeiro número do array que é divisível por 3 e 5 , caso ele exista:
+const numbers = [19, 21, 30, 3, 45, 22, 15];
+
+const findDivisibleBy3And5 = (value) => (value % 3 === 0 && value % 5 === 0) ? true : false
+  
+ 
+
+console.log(numbers.find(findDivisibleBy3And5));
