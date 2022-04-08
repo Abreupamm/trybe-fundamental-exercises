@@ -47,3 +47,13 @@ let temMusica = false
 
 
 console.log(musicas.find(findMusic))
+
+// Some
+// 1 - Escreva uma função que dado um array de nomes e um nome 
+// retorne true se ele estiver contido e caso contrário, retorne false , use some ;
+const names1 = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
+
+const hasName = (arr, name) => arr.some((elemento) => (elemento === name))
+
+
+console.log(hasName(names1, 'Ana'))
