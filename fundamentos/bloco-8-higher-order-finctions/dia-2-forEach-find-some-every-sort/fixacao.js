@@ -70,4 +70,10 @@ const people = [
 
 const verifyAges = (arr, minimumAge) => arr.every((elemento) => elemento.age >= minimumAge)
 
-console.log(verifyAges(people, 18));
+// console.log(verifyAges(people, 15));
+
+// 1 - Utilize a sort para ordenar o array pela idade das pessoas em ordem crescente .
+const peopleOrder = people.sort((a,b) => a.age - b.age )
+// Adicione se código aqui
+
+console.log(peopleOrder);
