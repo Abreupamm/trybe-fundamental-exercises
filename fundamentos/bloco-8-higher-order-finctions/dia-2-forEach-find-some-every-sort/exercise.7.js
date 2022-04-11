@@ -43,7 +43,6 @@
 //   },
 // ];
 
-
 const books = [
   {
     id: 1,
@@ -107,8 +106,7 @@ const books = [
   },
 ];
 // 7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.
-const expectedResult7 = false;
+// const expectedResult7 = false;
 
-function authorUnique() {
-  // escreva seu código aqui
-}
+const authorUnique = books.some((elemento1) => books.forEach((elemento2) => elemento2.author.birthYear === elemento1.author.birthYear ? true : false ));
+console.log(authorUnique);
