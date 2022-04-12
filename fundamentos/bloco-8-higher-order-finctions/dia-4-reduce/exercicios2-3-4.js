@@ -70,9 +70,13 @@ console.log(reduceNames);
 // 3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
 // const expectedResult = 43;
 
-function averageAge() {
-  // escreva seu código aqui
-}
+const averageAge = books.reduce((mediaIdade, livro) => {
+  const idade = livro.releaseYear - livro.author.birthYear;
+  mediaIdade += idade;
+  return mediaIdade 
+},0)
+
+console.log(averageAge / 6);
 
 // 4 - Encontre o livro com o maior nome.
 
