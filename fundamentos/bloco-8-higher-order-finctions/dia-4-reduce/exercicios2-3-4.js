@@ -91,6 +91,5 @@ console.log(averageAge / 6);
 //   releaseYear: 1991,
 // };
 
-function longestNamedBook() {
-  // escreva seu código aqui
-}
+const longestNamedBook = books.reduce((maiorNome, livro) => (maiorNome.name.length < livro.name.length) ? maiorNome = livro : maiorNome = maiorNome)
+console.log(longestNamedBook);
