@@ -15,8 +15,11 @@ let bebida = 'arroz';
 
 console.log(comida, animal, bebida); // arroz gato água
 
-// Utilizando array destructuring, faça com que os valores apareçam nas variáveis correspondentes ao seu verdadeiro tipo
+// Utilizando array destructuring, faça com que os valores apareçam nas variáveis correspondentes ao seu verdadeiro ti
 
+ [comida, animal, bebida] = ['arroz', 'gato', 'água']
+
+console.log(comida, animal, bebida);
 
 
 // 3 - array abaixo possui alguns números que não condizem com o conteúdo que ele deveria possuir. Através de array destructuring, 
