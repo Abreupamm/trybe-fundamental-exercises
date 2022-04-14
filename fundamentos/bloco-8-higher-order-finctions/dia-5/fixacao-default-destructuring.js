@@ -13,10 +13,8 @@ const otherPerson = {
   nationality: 'Russian',
 };
 
-
 const {nationality = 'Brazilian'} = person 
 
-// const { nationality = 'Brazilian' } = person
 console.log(nationality);
 console.log(getNationality(otherPerson)); // Ivan is Russian
 console.log(getNationality(person, nationality));
